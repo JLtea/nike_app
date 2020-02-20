@@ -9,9 +9,18 @@ var top = document.getElementById("top");
 var botm = document.getElementById("about");
 
 var navbar = document.getElementById("navbar");
-var progress = document.getElementById("progContainer")
 var logo = document.getElementById("logo");
 var sticky = navbar.offsetTop;
+
+
+var section1 = document.getElementById("s1");
+var section2 = document.getElementById("s2");
+var section3 = document.getElementById("s3");
+
+var first = document.getElementById("first");
+var second = document.getElementById("second");
+var third = document.getElementById("third");
+
 
 function stickynav() {
     if (window.pageYOffset >= sticky) {
@@ -19,28 +28,42 @@ function stickynav() {
         navbar.style.paddingBottom = "0px";
         navbar.style.paddingTop = "0px"
         logo.style.fontSize = "20px";
-        progress.classList.add("stickybar");
     } else {
         navbar.classList.remove("sticky");
         navbar.style.paddingBottom = "20px";
         navbar.style.paddingTop = "20px";
         logo.style.fontSize = "30px";
-        progress.classList.remove("stickybar");
     }
 }
 
 
 function posIndicate() {
-    if (window.pageYOffset >= sticky) {
+    var curr = window.pageYOffset;
+    if (curr >= sticky) {
         top.style.backgroundColor = "white";
     } else {
         top.style.backgroundColor = "#F4F4F4";
     }
-    
-    if (window.pageYOffset < document.body.scrollHeight) {
-        botm.style.backgroundColor= "white";
+    if (curr > sticky && curr < section2.offsetTop) {
+        first.style.backgroundColor = "#F4F4F4";
     } else {
+        first.style.backgroundColor = "white";
+    }
+    if (curr >= section2.offsetTop && curr < section3.offsetTop) {
+        second.style.backgroundColor = "#F4F4F4";
+    } else {
+        second.style.backgroundColor = "white";
+    }
+    if (curr >= section3.offsetTop && curr < document.body.scrollHeight- 1000) {
+        third.style.backgroundColor = "#F4F4F4";
+    } else {
+        third.style.backgroundColor = "white";
+    }
+    
+    if (curr >= document.body.scrollHeight - 1000) {
         botm.style.backgroundColor= "#F4F4F4";
+    } else {
+        botm.style.backgroundColor= "white";
     }
 }
 

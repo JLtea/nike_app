@@ -153,13 +153,12 @@ body {
 
 .ps4 {
     width: 100%;
-
-    
 }
 
 #s2 {
     background-color:#FFFDF6;
     height: 1000px;
+    align-content: center;
 }
 
 #s2 h1{
@@ -172,11 +171,22 @@ body {
     font-size: 300px;
 }
 
-#rabbit {
+#s2 img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#rabbit1 {
     width: 30%;
     height: auto;
 }
+
 #rabbit2 {
+    width: 30%;
+    height: auto;
+}
+
+#rabbit3 {
     width: 30%;
     height: auto;
 }
@@ -211,14 +221,15 @@ body {
     display: grid;
     grid-template-columns: 150px 150px 150px 150px;
     grid-template-rows: 150px;
-    grid-gap: 6rem;
+    grid-gap: 10%;
     justify-content: center;
 }
 
 .item {
-    border: 0.25rem solid #FF500A;
+    border: 0.25rem solid yellow;
     border-radius: 0.5rem;
     display: flex;
+    overflow:hidden;
     justify-content: center;
     align-items: center;
 }
@@ -228,10 +239,7 @@ body {
     grid-column: 1/1;
 }
 
-//#vid {
-//    width:inherit;
-//    height: auto;
-//}
+
 
 .preview {
     object-fit: cover;
@@ -246,18 +254,20 @@ body {
     background-position: center;
     background-size:contain;
     display: none;
-    max-width: 80%;
-    max-height: 80%;
-    
-    top: 0;
-    left: 0;
-    transform: translate(25%, 15%);
     position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     z-index: 1;
+    width: 50%;
 }
 
 .modal img {
-    visibility:visible;
+    max-width:80%;
+}
+
+.item:hover {
+    cursor:pointer;
 }
 
 .peacelogo {
