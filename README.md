@@ -1,4 +1,11 @@
-# MP #1: One Web Page To Rule Them All
+# nike_app
+
+First website page I made (HTML, CSS, vanilla JS)
+
+
+
+
+
 ### Due: Feb 19, 11.59PM CDT
 
 ## Table of Contents
@@ -38,52 +45,3 @@ Your webpage will have to implement the features listed below. Note that the exa
 14. At least one use of scalable vector icons through CSS (e.g. FontAwesome)
 15. Inclusion of social media icons
 
-## Grading Breakdown
-
-- Layout and Overall Design - 20%
-- Code (follows HTML5, SASS/SCSS, ES5 or ES6 best practices) - 13%
-- Smooth Scrolling - 10%
-- Carousel - 10%
-- Modal - 10%
-- Responsiveness - 10%
-- Position Indicator - 5%
-- Navbar Resizing - 5%
-- Multi-column layout - 5%
-- CSS3 Animations - 5%
-- Centering - 2%
-- Video - 2%
-- Sticky Navbar - 1%
-- Background Image - 1%
-- Scalable vector icons and inclusion of social media icons - 1%
-
-## Rules
-1. This is an individual assignment. No collaboration is permitted.
-2. It is not permitted to copy/paste code that is not your own. You are, however, free to look at different code sources for inspiration and clarity. All sources (code as well as reading material) that you reference to complete this assignment must be declared in the submission.
-3. No libraries are permitted.
-4. There should be no use of inline styling.
-5. No inline script tags should be used.
-6. HTML tables cannot be used for layout.
-7. If you think something you’re doing might not be acceptable, please ask on Piazza.
-8. You must utilize some SCSS features (variables, mixins, etc). A plain CSS file will receive less points.
-
-## Getting Started
-1. Clone the repository:
-`git clone https://gitlab.com/uiuc-web-programming/mp1.git mp1`, then `cd mp1`
-2. Install dependencies:
-`npm install`
-3. Start the dev server:
-`npm start`
-4. Open a browser and go to `http://localhost:8080/` to view your page. You should see "Welcome to MP1!" at the top of the screen. Note that if for some reason your port 8080 is occupied, it will default to 8081.
-
-## Submission Details
-Here's what you will need to submit:
-1. Create a private repository on GitLab. Make sure "Initialize this repository with a README" is not checked.
-2. Change the remote url for the mp1 directory to the url of the new private repository you created.
-```
-git remote rename origin old-origin
-git remote add origin git@gitlab.com:<your-gitlab-username>/mp1.git
-```
-3. Commit and push your local changes to this new repository.
-4. `.gitlab-ci.yml` file automatically makes a Gitlab CI pipeline run to deploy your code. After the pipeline finishes, your site should be live at `https://<your-gitlab-username>.gitlab.io/mp1`. **It may take up to 10-30 minutes for the site to go live after the first deployment.**
-5. Invite `uiucwp` as a collaborator. This should be as a **reporter**, not as a *guest*, otherwise we can't see your code.
-6. Fill out and submit the form [here](https://forms.gle/LJLMPVt1fzBXJXNw6)
